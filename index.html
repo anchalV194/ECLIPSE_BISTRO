@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Restaurant Reservations</title>
+    <link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Eclipse Bistro</h1>
+        <p>Experience fine dining at its best</p>
+    </header>
+
+    <!-- Appetizers and Mains Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <!-- Menu items will be inserted here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Desserts Section -->
+    <section id="desserts">
+        <h2>Our Desserts</h2>
+        <div class="dessert-items">
+            <!-- Dessert items will be inserted here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation">
+        <h2>Reserve a Table</h2>
+        <form id="reservationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" min="1" required>
+
+            <button type="submit">Reserve Now</button>
+        </form>
+        <div id="confirmation" class="hidden"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

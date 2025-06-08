@@ -1,0 +1,129 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Background Image */
+body {
+    font-family: 'Georgia', serif;
+    background: url('background-image.jpeg') no-repeat center center fixed; /* Replace with the path to your background image */
+    background-size: cover;
+    color: #f5f5f5;
+    text-align: center;
+    line-height: 1.6;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Optional: Dark Overlay for Background Image */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust opacity for readability */
+    z-index: 0;
+}
+
+/* Container Styling */
+header, #menu, #desserts, #reservation {
+    background-color: rgba(30, 30, 30, 0.85); /* Slightly transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+    width: 90%;
+    margin-bottom: 20px;
+    z-index: 1; /* Ensure content appears above overlay */
+}
+
+/* Header and Section Headings */
+h1 {
+    font-size: 7em;
+    color: #d4af37;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 5em;
+    margin-bottom: 20px;
+}
+/* Apply the cursive font to the headings */
+h1, h2 {
+    font-family: 'Great Vibes', cursive;
+}
+
+/* Menu and Dessert Items Layout for Single Row */
+.menu-items, .dessert-items {
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    gap: 20px;
+    justify-content: center; /* Center the items within the container */
+}
+
+.menu-item {
+    background-color: #000000;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px; /* Set a fixed width for each item */
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    color: #d4af37;
+    margin-top: 10px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form button {
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #d4af37;
+    border: none;
+    color: #000000;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b59632;
+}
+
+/* Confirmation Section */
+#confirmation {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #444;
+    color: #d4af37;
+    border-radius: 8px;
+    display: none;
+}
