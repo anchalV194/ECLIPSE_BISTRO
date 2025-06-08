@@ -1,2 +1,2 @@
 # ECLIPSE_BISTRO
-A restaurant table table booking web page
+A restaurant table booking web page
